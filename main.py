@@ -23,12 +23,10 @@ Task 2 -- Forking and pulling request
 - Student B creates a `requirement.txt` file and commit it. ✅
 - Student B adds Student A as a collaborator. ✅
 [New task starts here:]
-- Student A forks the repo.
-- Student A clones the forked repo to A's local machine. (The repo that under A's 
-name.)
-- Student A implements the `toss_coin()` function, and commits to the main branch. 
-(Note: A and B are working on different repositories. A commits to A's forked 
-main.)
+- Student A forks the repo. ✅
+- Student A clones the forked repo to A's local machine. (The repo that under A's name.) ✅
+- Student A implements the `toss_coin()` function, and commits to the main branch. ✅
+(Note: A and B are working on different repositories. A commits to A's forked main.)
 - Student A send a pull request and merge the code.
 You may delete your repo after all tasks have completed.
 Questions:
@@ -62,11 +60,9 @@ def get_rand():
     return my_randint
 def toss_coin():
     '''Return either Head or Tail'''
-    """TODO: Add your code here
-        Hint: Using random.randint() function.
-    """
-    coin = 'Head'
-    return coin
+
+    return 'Head' if random.randint(0,1) == 0 else "Tail"
+
 def read_input():
     my_input = input(MESSAGE)
     if my_input.lower() == 'e':
